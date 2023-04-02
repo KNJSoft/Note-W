@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+         android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Note"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/extrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titre"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                tools:text="Ceci est un extrait de votre note,vous pouvez cliquer pour en savoir plus" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
